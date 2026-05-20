@@ -4,15 +4,50 @@
     "email": "riven.development@gmail.com",
     "mobile": "0488 992 283",
     "location": "Melbourne VIC 3204",
-    "summary": "Computer Science graduate (with Distinction) specialising in Artificial Intelligence and Machine Learning, seeking a junior full-stack or AI engineering role. Practical experience building full-stack applications and agentic AI systems using modern LLM tooling. Strong foundation in Python, TypeScript, and backend development. Fluent in English and Spanish."
+    "summary": "Computer Science graduate (Distinction, RMIT) focused on AI engineering and full-stack systems. Builds agentic AI applications using the OpenAI Agents SDK and Model Context Protocol, backed by full-stack experience across Python, TypeScript, and PostgreSQL. Recently shipped a containerised agentic chatbot service to production with multi-process orchestration and structured error handling. Bilingual in English and Spanish."
   },
   "skills": {
-    "ai_and_ml": ["Python", "OpenAI SDK", "multi-agent systems", "tool calling", "LLM integration", "PyTorch", "scikit-learn"],
-    "languages": ["TypeScript", "JavaScript", "Python", "Java", "C++"],
-    "frontend": ["React", "Next.js"],
-    "backend": ["Node.js", "Express", "NestJS", "REST APIs"],
-    "data_and_infrastructure": ["MongoDB", "PostgreSQL", "Docker", "Microservices"],
-    "tooling": ["Git", "GitHub", "Jira", "Selenium", "JMeter"]
+    "ai_engineering": [
+      "OpenAI Agents SDK",
+      "Model Context Protocol",
+      "FastMCP"
+    ],
+    "languages": [
+      "Python",
+      "TypeScript",
+      "JavaScript",
+      "SQL"
+    ],
+    "backend": [
+      "FastAPI",
+      "Pydantic",
+      "NestJS",
+      "Node.js",
+      "REST APIs",
+      "JWT Auth"
+    ],
+    "frontend": [
+      "React",
+      "Next.js",
+      "TanStack Start",
+      "TanStack Router",
+      "TanStack Query",
+      "Tailwind CSS",
+      "React Hook Form",
+      "Zod",
+      "Vite"
+    ],
+    "data_and_infrastructure": [
+      "PostgreSQL",
+      "Prisma",
+      "Neon",
+      "Docker",
+      "Fly.io"
+    ],
+    "tooling": [
+      "Git",
+      "GitHub"
+    ]
   },
   "experience": [
     {
@@ -24,14 +59,13 @@
         "Designed and built a full-stack platform managing ~500 artwork assets, testimonials, and customer enquiries",
         "Developed a secure admin panel using JWT authentication and Argon2 password hashing",
         "Designed and implemented a REST API with NestJS and PostgreSQL (Neon)",
-        "Offloaded image storage, optimisation, and delivery to Cloudinary using URL-based transformations",
+        "Offloaded image storage and delivery to Cloudinary, using URL-based transformations to resize and compress assets dynamically — reducing backend load and improving frontend performance",
         "Built a responsive frontend using React (Vite), Tailwind CSS, shadcn/ui, and Framer Motion",
-        "Implemented email handling via Resend to manage and route customer enquiries",
-        "Preparing application for production deployment including environment configuration and client handoff"
+        "Implemented email handling via Resend to manage and route customer enquiries"
       ]
     },
     {
-      "title": "Software Engineer Intern",
+      "title": "Software Engineer Internship",
       "company": "Musical Moon",
       "duration": "Jan 2025 to May 2025",
       "description": "Early-stage startup building a marketplace platform for musician collaboration.",
@@ -68,21 +102,54 @@
       "graduation_date": "17th November 2017"
     }
   ],
+  "projects": [
+    {
+      "name": "AI Portfolio Chatbot",
+      "status": "Deployed",
+      "live_url": "https://riven-portfolio-api.fly.dev",
+      "repo": "https://github.com/Riiiviii/ai-chatbot",
+      "description": "An agentic AI service that answers questions about my professional background using tool-calling and structured resume data. Built with the OpenAI Agents SDK and a custom FastMCP server exposing seven resume tools.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "OpenAI Agents SDK",
+        "Model Context Protocol",
+        "FastMCP",
+        "Pydantic",
+        "Docker",
+        "Fly.io"
+      ]
+    },
+    {
+      "name": "Vestly",
+      "status": "In development",
+      "repo": "https://github.com/Riiiviii/vestly",
+      "description": "A multi-agent financial analysis pipeline coordinating four specialist agents (fundamentals, sentiment, risk/macro, competitive) and a judge agent that synthesises an evidence-grounded buy/sell/hold thesis from real-world market data.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "OpenAI Agents SDK",
+        "Pydantic",
+        "yfinance",
+        "Finnhub"
+      ]
+    }
+  ],
   "interests": [
-    "Game Development — building small-scale interactive projects with Unity and Godot",
+    "Game Development — building small-scale interactive projects with Godot",
     "Football (Soccer) — follower of local A-League and international leagues"
   ],
-  "languages": ["English (fluent)", "Spanish (fluent)"],
+  "languages": [
+    "English (fluent)",
+    "Spanish (fluent)"
+  ],
   "socials": {
     "email": "riven.development@gmail.com",
-    "github": "https://github.com/Riiiviii"
+    "github": "https://github.com/Riiiviii",
+    "linkedin": "https://www.linkedin.com/in/gabriel-riven-wahnich",
+    "portfolio": "https://rivenwahnich.dev"
   },
-  "references": [
-    {
-      "name": "Jason Riley",
-      "title": "Branch Manager",
-      "company": "PLE Computers",
-      "contact": "04 7645 9743"
-    }
-  ]
+  "references": {
+    "availability": "Available upon request"
+  }
 }
