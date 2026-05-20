@@ -28,9 +28,8 @@ Storage is a SQLite file at `/data/sessions.db` inside the container.
 The `/data` directory is owned by the non-root container user
 (`ai-chatbot`) and created in the Dockerfile.
 
-Session IDs are validated against the standard UUID v4 regex via a
-Pydantic `Field` pattern — invalid IDs return 422 before the request
-reaches the agent.
+Session IDs are validated using Pydantic's `UUID4` type — invalid IDs
+return 422 before the request reaches the agent.
 
 **TTL strategy:** none explicit. Sessions persist for the lifetime of
 the Fly machine. When the machine auto-stops after idle, `/data` is

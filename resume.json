@@ -108,7 +108,7 @@
       "status": "Deployed",
       "live_url": "https://riven-portfolio-api.fly.dev",
       "repo": "https://github.com/Riiiviii/ai-chatbot",
-      "description": "An agentic AI service that answers questions about my professional background using tool-calling and structured resume data. Built with the OpenAI Agents SDK and a custom FastMCP server exposing seven resume tools.",
+      "description": "An agentic AI service that answers questions about my professional background using tool-calling and structured resume data. Built with the OpenAI Agents SDK and a custom FastMCP server exposing eight resume tools.",
       "technologies": [
         "Python",
         "FastAPI",

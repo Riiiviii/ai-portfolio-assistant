@@ -40,10 +40,11 @@ def root():
 @app.post("/chat", response_model=ChatResponse)
 async def chat_message(chat_request: ChatRequest, request: Request) -> ChatResponse:
     agent = request.app.state.agent
-    session = SQLiteSession(
-        session_id=chat_request.session_id, db_path="/data/sessions.db"
-    )
+
     try:
+        session = SQLiteSession(
+            session_id=str(chat_request.session_id), db_path="/data/sessions.db"
+        )
         result = await Runner.run(agent, chat_request.message, session=session)
     except Exception as err:
         logger.exception("Chat request failed")
