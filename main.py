@@ -3,6 +3,7 @@ import logging
 from settings import settings
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException, Request
+from agents import SQLiteSession
 from agent import GraduateAgent
 from agents.mcp import MCPServerSse, MCPServerSseParams
 from schemas.chat import ChatRequest, ChatResponse
@@ -39,8 +40,11 @@ def root():
 @app.post("/chat", response_model=ChatResponse)
 async def chat_message(chat_request: ChatRequest, request: Request) -> ChatResponse:
     agent = request.app.state.agent
+    session = SQLiteSession(
+        session_id=chat_request.session_id, db_path="/data/sessions.db"
+    )
     try:
-        result = await Runner.run(agent, chat_request.message)
+        result = await Runner.run(agent, chat_request.message, session=session)
     except Exception as err:
         logger.exception("Chat request failed")
         raise HTTPException(
