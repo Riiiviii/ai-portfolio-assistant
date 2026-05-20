@@ -12,7 +12,7 @@ EXPOSE 8000
 
 RUN chmod +x ./entrypoint.sh
 RUN useradd -m ai-chatbot
+RUN mkdir -p /data && chown ai-chatbot:ai-chatbot /data
 USER ai-chatbot
-
 
 CMD ["./entrypoint.sh"]

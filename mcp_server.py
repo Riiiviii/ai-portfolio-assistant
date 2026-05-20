@@ -30,6 +30,12 @@ def get_technical_skills():
 
 
 @mcp.tool()
+def get_projects():
+    """Get personal projects"""
+    return data["projects"]
+
+
+@mcp.tool()
 def get_education():
     """Get education"""
     return data["education"]
