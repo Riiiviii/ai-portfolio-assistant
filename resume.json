@@ -122,16 +122,23 @@
     },
     {
       "name": "Vestly",
-      "status": "In development",
+      "status": "Deployed",
+      "live_url": "https://vestly-nine.vercel.app/",
       "repo": "https://github.com/Riiiviii/vestly",
-      "description": "A multi-agent financial analysis pipeline coordinating four specialist agents (fundamentals, sentiment, risk/macro, competitive) and a judge agent that synthesises an evidence-grounded buy/sell/hold thesis from real-world market data.",
+      "description": "A multi-agent financial analysis pipeline that runs four specialist agents (Fundamentals, Sentiment, Risk, Competition) in parallel and a Judge agent that synthesises their findings into an evidence-grounded investment thesis. FastAPI backend on Fly.io, React (Vite) frontend on Vercel. Agents are built on the OpenAI Agents SDK with Pydantic-validated structured outputs and a shared AnalysisAgent base class, drawing research data from yfinance and Finnhub. The Competition agent has its own MCP server (FastMCP over stdio) exposing peer-lookup and research-pack tools, letting it autonomously select 2-3 relevant competitors via Finnhub and fetch comparison data on demand.",
       "technologies": [
         "Python",
         "FastAPI",
         "OpenAI Agents SDK",
+        "Model Context Protocol",
+        "FastMCP",
         "Pydantic",
         "yfinance",
-        "Finnhub"
+        "Finnhub",
+        "React",
+        "Vite",
+        "Vercel",
+        "Fly.io"
       ]
     }
   ],
