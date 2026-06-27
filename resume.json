@@ -3,14 +3,24 @@
     "name": "Gabriel Riven Wahnich",
     "email": "riven.development@gmail.com",
     "mobile": "0488 992 283",
-    "location": "Melbourne VIC 3204",
-    "summary": "Computer Science graduate (Distinction, RMIT) focused on AI engineering and full-stack systems. Builds agentic AI applications using the OpenAI Agents SDK and Model Context Protocol, backed by full-stack experience across Python, TypeScript, and PostgreSQL. Recently shipped a containerised agentic chatbot service to production with multi-process orchestration and structured error handling. Bilingual in English and Spanish."
+    "location": "Melbourne VIC",
+    "target_roles": [
+      "Junior AI Engineer",
+      "Full-Stack Software Engineer",
+      "AI Application Engineer",
+      "Junior Software Engineer"
+    ],
+    "summary": "Computer Science graduate with Distinction from RMIT University targeting junior AI Engineer and full-stack software roles. Built and deployed Vestly, a production multi-agent financial analysis platform using OpenAI Agents SDK, MCP/FastMCP, FastAPI, React and PostgreSQL. Shipped REST APIs, authentication systems and tested backend services across internship, freelance and self-directed projects. Bilingual in English and Spanish."
   },
   "skills": {
     "ai_engineering": [
       "OpenAI Agents SDK",
       "Model Context Protocol",
-      "FastMCP"
+      "FastMCP",
+      "Multi-Agent Systems",
+      "LLM Tool Calling",
+      "Pydantic",
+      "Structured Outputs"
     ],
     "languages": [
       "Python",
@@ -20,11 +30,12 @@
     ],
     "backend": [
       "FastAPI",
-      "Pydantic",
       "NestJS",
       "Node.js",
       "REST APIs",
-      "JWT Auth"
+      "JWT Authentication",
+      "Argon2",
+      "Pydantic"
     ],
     "frontend": [
       "React",
@@ -33,18 +44,26 @@
       "TanStack Router",
       "TanStack Query",
       "Tailwind CSS",
+      "shadcn/ui",
       "React Hook Form",
       "Zod",
-      "Vite"
+      "Vite",
+      "Framer Motion"
     ],
     "data_and_infrastructure": [
       "PostgreSQL",
       "Prisma",
       "Neon",
       "Docker",
-      "Fly.io"
+      "Fly.io",
+      "Vercel",
+      "Cloudinary"
     ],
-    "tooling": [
+    "testing_and_tooling": [
+      "Jest",
+      "Pytest",
+      "Unit Testing",
+      "Linux",
       "Git",
       "GitHub"
     ]
@@ -54,38 +73,72 @@
       "title": "Freelance Software Engineer",
       "company": "Olways Pets",
       "duration": "Jan 2026 to Present",
-      "description": "Melbourne-based commission artist platform offering handmade pet portraits shipped worldwide.",
+      "location": "Melbourne, VIC",
+      "description": "Commissioned pet portrait business platform for browsing artwork, submitting customer enquiries, and managing artwork and testimonial content.",
       "responsibilities": [
-        "Designed and built a full-stack platform managing ~500 artwork assets, testimonials, and customer enquiries",
-        "Developed a secure admin panel using JWT authentication and Argon2 password hashing",
-        "Designed and implemented a REST API with NestJS and PostgreSQL (Neon)",
-        "Offloaded image storage and delivery to Cloudinary, using URL-based transformations to resize and compress assets dynamically — reducing backend load and improving frontend performance",
-        "Built a responsive frontend using React (Vite), Tailwind CSS, shadcn/ui, and Framer Motion",
-        "Implemented email handling via Resend to manage and route customer enquiries"
+        "Built a full-stack platform for a commissioned pet portrait business, replacing a static catalogue workflow with customer enquiry flows and admin-managed artwork and testimonial content.",
+        "Developed a NestJS backend with 23 REST API endpoints across authentication, image management, testimonials and contact submissions, separating public catalogue routes from JWT-protected ADMIN CRUD operations.",
+        "Implemented secure admin workflows using JWT guards, role-based access control, httpOnly access-token cookies and Argon2 password hashing.",
+        "Integrated Cloudinary for image storage and delivery, using URL-based transformations and signed-upload endpoints for dynamic resizing, compression and managed media uploads.",
+        "Built a responsive frontend using React, Vite, Tailwind CSS, shadcn/ui and Framer Motion.",
+        "Implemented email handling via Resend to manage and route customer enquiries."
+      ],
+      "technologies": [
+        "TypeScript",
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Framer Motion",
+        "NestJS",
+        "PostgreSQL",
+        "Prisma",
+        "Neon",
+        "JWT",
+        "Argon2",
+        "Cloudinary",
+        "Resend"
       ]
     },
     {
-      "title": "Software Engineer Internship",
+      "title": "Software Engineer Intern",
       "company": "Musical Moon",
       "duration": "Jan 2025 to May 2025",
       "description": "Early-stage startup building a marketplace platform for musician collaboration.",
       "responsibilities": [
-        "Designed and shipped an Order History feature end-to-end across web (Next.js) and mobile (Expo)",
-        "Built and maintained microservices supporting order data flow",
-        "Integrated secure file-download functionality into the Order History interface for cross-artist file sharing",
-        "Containerised microservices using Docker",
-        "Collaborated via GitHub with branching, pull requests, and code review"
+        "Owned end-to-end delivery of an order-history feature across the Next.js web application and Expo mobile application, from database schema and backend service logic through to production-ready UI.",
+        "Built and maintained the order-history microservice, producing 10 Jest unit tests covering CRUD operations, validation outputs, data flow and web/mobile integration assumptions.",
+        "Integrated secure file-download functionality into the order-history interface for cross-artist file sharing.",
+        "Collaborated via GitHub using branching, pull requests and code review."
+      ],
+      "technologies": [
+        "TypeScript",
+        "Next.js",
+        "Expo",
+        "NestJS",
+        "Jest",
+        "Docker",
+        "Git",
+        "GitHub"
       ]
     },
     {
-      "title": "Systems Assembler and Hardware Technician",
+      "title": "Hardware Technician",
       "company": "PLE Computers",
       "duration": "Jun 2021 to Jan 2024",
-      "description": "Fast-paced retail and enterprise environment handling high volumes of custom system builds and hardware support.",
+      "description": "Fast-paced retail and enterprise environment handling custom system builds, hardware diagnostics and customer-facing technical support.",
       "responsibilities": [
-        "Diagnosed and resolved hardware faults across consumer and enterprise systems",
-        "Assembled custom PC builds to specification and performed component-level quality testing",
-        "Applied BIOS and firmware updates to maintain hardware compatibility and system stability"
+        "Diagnosed and resolved hardware, firmware, Linux and compatibility faults across consumer and enterprise systems under customer-facing time pressure.",
+        "Assembled custom PC builds to specification and performed component-level quality testing.",
+        "Applied BIOS and firmware updates to maintain hardware compatibility and system stability."
+      ],
+      "technologies": [
+        "Linux",
+        "Hardware Diagnostics",
+        "Firmware Updates",
+        "BIOS Configuration",
+        "System Assembly",
+        "Customer Support"
       ]
     }
   ],
@@ -94,21 +147,63 @@
       "institution": "RMIT University",
       "degree": "Bachelor of Computer Science with Distinction",
       "minor": "Artificial Intelligence and Machine Learning",
-      "graduation_date": "14th December 2025"
+      "duration": "Jan 2023 to Dec 2025",
+      "graduation_date": "Dec 2025"
     },
     {
       "institution": "McKinnon Secondary College",
       "degree": "High School Certificate",
-      "graduation_date": "17th November 2017"
+      "graduation_date": "Nov 2017"
     }
   ],
   "projects": [
     {
-      "name": "AI Portfolio Chatbot",
+      "name": "Vestly",
       "status": "Deployed",
-      "live_url": "https://riven-portfolio-api.fly.dev",
+      "live_url": "https://vestly-nine.vercel.app/",
+      "repo": "https://github.com/Riiiviii/vestly",
+      "description": "A production multi-agent financial analysis platform where Fundamentals, Sentiment, Risk and Competition agents run in parallel and a Judge agent synthesises their findings into an evidence-grounded investment thesis.",
+      "details": [
+        "Built and deployed a FastAPI backend on Fly.io and React/Vite frontend on Vercel.",
+        "Architected the agent framework using the OpenAI Agents SDK, Pydantic-validated structured outputs and a shared AnalysisAgent base class.",
+        "Developed a dedicated FastMCP server for the Competition agent, exposing peer lookup and research tools that enable autonomous competitor selection and on-demand comparison data retrieval via Finnhub.",
+        "Implemented 8 MCP functions/tools, including 5 yFinance tools, 1 Finnhub news tool and 2 competition/research tools.",
+        "The yFinance tools fetch company profile data, financials, 1-year price history, analyst recommendations and insider transactions.",
+        "The Finnhub tool fetches recent company news from the last 30 days.",
+        "The competition and research tools fetch peer companies and generate a full research pack with summary, snapshot, financials, price movement, recent news and confidence scoring.",
+        "Produced 27 Pytest unit tests, including 15 tests for confidence-scoring logic and 12 tests for research-pack generation.",
+        "Confidence-scoring tests cover missing financials, stale or insufficient news, insufficient price history and missing company metadata.",
+        "Research-pack tests cover company summaries, snapshots, financial snapshots, price movement, recent news and full pack creation."
+      ],
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "OpenAI Agents SDK",
+        "Model Context Protocol",
+        "FastMCP",
+        "Pydantic",
+        "Pytest",
+        "yfinance",
+        "Finnhub",
+        "React",
+        "Vite",
+        "Vercel",
+        "Fly.io"
+      ]
+    },
+    {
+      "name": "AI Portfolio Assistant",
+      "status": "Deployed",
+      "live_url": "https://rivenwahnich.dev",
+      "api_url": "https://riven-portfolio-api.fly.dev",
       "repo": "https://github.com/Riiiviii/ai-chatbot",
-      "description": "An agentic AI service that answers questions about my professional background using tool-calling and structured resume data. Built with the OpenAI Agents SDK and a custom FastMCP server exposing eight resume tools.",
+      "description": "A deployed AI chat assistant integrated into rivenwahnich.dev that answers questions about Gabriel's professional background using structured tool calls rather than static prompt context.",
+      "details": [
+        "Built with the OpenAI Agents SDK and a custom FastMCP server exposing structured tools for professional experience, projects and technical skills.",
+        "Designed the assistant around structured tool calls, allowing the agent to retrieve targeted information about projects, experience and skills.",
+        "Packaged the FastAPI application and FastMCP server into a single Fly.io deployment.",
+        "Used Pydantic-validated schemas, structured error handling and Dockerised service configuration for consistent production deployment."
+      ],
       "technologies": [
         "Python",
         "FastAPI",
@@ -117,34 +212,15 @@
         "FastMCP",
         "Pydantic",
         "Docker",
-        "Fly.io"
-      ]
-    },
-    {
-      "name": "Vestly",
-      "status": "Deployed",
-      "live_url": "https://vestly-nine.vercel.app/",
-      "repo": "https://github.com/Riiiviii/vestly",
-      "description": "A multi-agent financial analysis pipeline that runs four specialist agents (Fundamentals, Sentiment, Risk, Competition) in parallel and a Judge agent that synthesises their findings into an evidence-grounded investment thesis. FastAPI backend on Fly.io, React (Vite) frontend on Vercel. Agents are built on the OpenAI Agents SDK with Pydantic-validated structured outputs and a shared AnalysisAgent base class, drawing research data from yfinance and Finnhub. The Competition agent has its own MCP server (FastMCP over stdio) exposing peer-lookup and research-pack tools, letting it autonomously select 2-3 relevant competitors via Finnhub and fetch comparison data on demand.",
-      "technologies": [
-        "Python",
-        "FastAPI",
-        "OpenAI Agents SDK",
-        "Model Context Protocol",
-        "FastMCP",
-        "Pydantic",
-        "yfinance",
-        "Finnhub",
+        "Fly.io",
         "React",
-        "Vite",
-        "Vercel",
-        "Fly.io"
+        "Vite"
       ]
     }
   ],
   "interests": [
     "Game Development — building small-scale interactive projects with Godot",
-    "Football (Soccer) — follower of local A-League and international leagues"
+    "Football — follower of local A-League and international leagues"
   ],
   "languages": [
     "English (fluent)",
